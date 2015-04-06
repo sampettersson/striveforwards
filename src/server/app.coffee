@@ -17,12 +17,6 @@ app.set "views", __dirname.concat "/views"
 routes = require "routes"
 routes app, express
 
-if process.env.NODE_ENV is "development"
+port = process.env.PORT
 
-      app.listen 8080
-
-else
-
-      port = process.env.PORT
-
-      app.listen port
+app.listen port
