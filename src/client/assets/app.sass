@@ -1,0 +1,128 @@
+@import 'fonts/fonts'
+
+*
+  margin: 0
+  padding: 0
+  -webkit-font-smoothing: antialiased
+  text-rendering: geometricPrecision
+  box-sizing: border-box
+
+html, body
+  height: 100%
+  width: 100%
+
+body
+  font-family: "asapregular", sans-serif
+
+.hide
+  display: none
+
+application-menu
+  nav
+    .button
+      position: absolute
+      right: 5%
+      top: 5%
+      color: #ffffff
+      font-family: "asapmedium", sans-serif
+      text-decoration: none
+      font-size: 1.3em
+      z-index: 1
+
+      i
+        padding-right: 5px
+
+    .menu.hide
+      display: none
+
+    .menu
+      display: flex
+      align-items: center
+      justify-content: center
+      position: absolute
+      background: url("images/holi.jpg")
+      background-size: cover
+      width: 100%
+      min-height: 100%
+      text-align: center
+
+      .darken
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background: #000000
+        opacity: 0.3
+        position: fixed
+        z-index: 0
+
+      .container
+        z-index: 1
+        width: 25%
+
+        h2
+          font-size: 1.3em
+          color: #ffffff
+
+        ul
+          list-style-type: none
+          padding-top: 25px
+          padding-bottom: 25px
+          width: 100%
+
+          li
+            width: 100%
+
+            a
+              display: block
+              text-decoration: none
+              color: #ffffff
+              font-size: 2.5em
+              font-family: "asapmedium", sans-serif
+              border-radius: 5px
+              padding: 10px
+              width: 100%
+
+              &:hover
+                background: rgba(0,0,0,0.5)
+
+        ul.share
+
+          li
+            display: inline-block
+            width: auto
+
+            a
+              &:hover
+                background: 0
+section.hero
+  display: flex
+  align-items: center
+  justify-content: center
+  background: url("images/hero.jpg")
+  background-size: cover
+  width: 100%
+  height: 100%
+
+  .container
+
+    .logo
+
+      h1
+        font-family: "levirebrushedregular", sans-serif
+        color: #ffffff
+        font-size: 5.4em
+        transform: rotate(-4deg)
+
+      .brush
+        background: url("graphics/brush.png")
+        background-size: 100%
+        margin-top: -10px
+        padding: 10px
+
+    p
+      margin-top: 25px
+      color: #ffffff
+      font-size: 1.8em
+      text-align: center
+      font-family: "asapmedium", sans-serif
