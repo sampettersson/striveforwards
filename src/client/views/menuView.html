@@ -1,0 +1,33 @@
+<nav ng-controller="menuController">
+    <a href="#" class="button" ng-click="menu()">MENU <i class="fa" ng-class="{ 'fa-bars': !menuActive, 'fa-close': menuActive }"></i></a>
+    <div class="menu" ng-class="{ 'hide': !menuActive }">
+
+        <div class="container">
+
+            <h2>STRIVE</h2>
+
+            <ul>
+                <li><a href="">HOME</a></li>
+            </ul>
+
+            <h2>ABOUT</h2>
+
+            <ul>
+                <li><a href="">WHAT IS THIS</a></li>
+                <li><a href="">WHO MADE THIS</a></li>
+                <li><a href="">CREDITS</a></li>
+            </ul>
+
+            <h2>SHARE</h2>
+
+            <ul class="share">
+                <li class="fb"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li class="twitter"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+            </ul>
+
+        </div>
+
+        <div class="darken"></div>
+
+    </div>
+</nav>
