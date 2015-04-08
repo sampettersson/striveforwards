@@ -1,4 +1,5 @@
 @import 'fonts/fonts'
+@import "animate-css/animate"
 
 *
   margin: 0
@@ -8,10 +9,10 @@
   box-sizing: border-box
 
 html, body
-  height: 100%
   width: 100%
 
 body
+  height: 100%
   font-family: "asapregular", sans-serif
 
 .hide
@@ -103,6 +104,9 @@ section.hero
   background-size: cover
   width: 100%
   height: 100%
+  min-height: 500px
+  max-height: 800px
+
 
   .container
 
@@ -126,3 +130,59 @@ section.hero
       font-size: 1.8em
       text-align: center
       font-family: "asapmedium", sans-serif
+
+    .arrow-container
+      display: block
+      text-align: center
+      width: 100%
+      padding-top: 50px
+
+      p
+        text-transform: uppercase
+        font-size: 1em
+        padding-bottom: 10px
+
+section.intro
+  padding-top: 50px
+  padding-bottom: 50px
+
+  .container
+    width: 95%
+    margin: 0 auto
+
+    .heading
+      h1
+        color: #F6014A
+        font-size: 1.7em
+        font-family: "asapmedium", sans-serif
+
+      h2
+        color: #F6014A
+        font-size: 1.4em
+        font-family: "asapregular", sans-serif
+
+    .primary
+      padding-top: 50px
+      display: flex
+
+      .body
+        flex: 0 0 50%
+
+      .headline
+        flex: 0 0 50%
+        margin-left: 20px
+        overflow: hidden
+        display: block
+        position: relative
+
+        .scroll-container
+          height: 100%
+          position: absolute
+
+          primary-body-headline
+            color: #F6014A
+            font-size: 1.9em
+            font-family: "asapmedium", sans-serif
+
+section.people
+  background: url("graphics/texture.png")

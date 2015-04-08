@@ -7,18 +7,15 @@ document.registerElement "application-page"
 
 require "angular"
 require "angular-route"
-require "angular-skrollr"
 
-App = angular.module 'strive', ["ngRoute", "sn.skrollr"]
+require "lodash"
+require "shifty"
+require "rekapi"
+window.AnimationFrame = require "animation-frame"
+require "spark-scroll"
 
-App.config (snSkrollrProvider) ->
-  snSkrollrProvider.config =
-    forceHeight: false
-    smoothScrolling: true
 
-App.run ["snSkrollr", (snSkrollr) ->
-  snSkrollr.init();
-]
+App = angular.module 'strive', ["ngRoute", "gilbox.sparkScroll"]
 
 App.run ['$route', angular.noop]
 

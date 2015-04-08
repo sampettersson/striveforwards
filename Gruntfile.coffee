@@ -6,25 +6,34 @@ module.exports = (grunt) ->
 
 	grunt.initConfig
 		coffee:
-		  dist:
-		    options:
-		      bare:true
-		      sourceMap: false
-		    expand: true
-		    flatten: false
-		    cwd: "src"
-		    src: ["**/*.coffee"]
-		    dest: "dist"
-		    ext: ".js"
+			dist:
+				options:
+					bare:true
+					sourceMap: false
+				expand: true
+				flatten: false
+				cwd: "src"
+				src: ["**/*.coffee"]
+				dest: "dist"
+				ext: ".js"
 		copy:
 			dist:
 				files: [
 					{
 						expand: true
 						cwd: "src/"
-						src: ["client/assets/**/*", "!client/assets/**/*.sass", "!client/assets/**/*.scss", "!client/assets/**/*.scss", "**/*.hbs", "**/*.html"]
+						src: ["client/assets/**/*", "!client/assets/**/*.sass", "!client/assets/**/*.scss", "**/*.hbs", "**/*.html"]
 						dest: "dist/"
 					}
+					{
+						expand: true
+						cwd: "bower_components"
+						dest: "dist/client/vendor/components"
+						src: ["**/*"]
+					}
+				]
+			bower:
+				files: [
 					{
 						expand: true,
 						dot: true,
@@ -41,6 +50,7 @@ module.exports = (grunt) ->
 			dist:
 				options:
 					sourcemap: "none"
+					loadPath: ["src/client/assets/", "dist/client/vendor/components/"]
 				files: [
 					{
 						expand: true
@@ -57,6 +67,8 @@ module.exports = (grunt) ->
 				src: ["dist/**/*.css", "!dist/**/vendor/**/*.css"]
 		cssmin:
 			sass:
+				options:
+					keepSpecialComments: 0
 				files: [
 					expand: true
 					cwd: "dist"
@@ -64,22 +76,23 @@ module.exports = (grunt) ->
 					dest: "dist"
 				]
 		clean:
-			dist: ["dist/"]
+			dist: ["dist"]
 			sass: [".sass-cache"]
+			bower: ["bower_components"]
 		bower:
-	      install:
-	        options:
-	          install: true
-	          copy: true
-	          cleanBowerDir: true
-	          cleanTargetDir: true
-	          targetDir: "dist/client/vendor/components"
-	          bowerOptions:
-	            production: false
+			install:
+				options:
+					install: true
+					copy: false
+					cleanBowerDir: false
+					cleanTargetDir: true
+					targetDir: "dist/client/vendor/components"
+					bowerOptions:
+						production: false
 		browserify:
 			app:
 				files:
-					'dist/client/build/app.js': ["dist/client/**/*.js", "!dist/client/build/app.js"]
+					'dist/client/build/app.js': ["dist/client/**/*.js", "!dist/client/vendor/**/*.js", "!dist/client/build/app.js"]
 		foreman:
 			dev:
 				env: ["dev.env"]
@@ -89,9 +102,6 @@ module.exports = (grunt) ->
 			push:
 				command: () ->
 					"git add .; git commit -m '" + commitMessage + "';git push " + repo + " master"
-			killForeman:
-				command: () ->
-					"lsof -P | grep ':8080' | awk '{print $2}' | xargs kill -9"
 		uglify:
 			app:
 				files:
@@ -101,7 +111,7 @@ module.exports = (grunt) ->
 				files: [
 					{
 						expand: true
-						src: ["dist/client/**/*.js", "!dist/client/build/app.js"]
+						src: ["dist/client/**/*.js", "!dist/client/build/app.js", "!dist/client/vendor/**/*.js"]
 					}
 				]
 
@@ -118,8 +128,8 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-foreman'
 	grunt.loadNpmTasks 'grunt-ng-annotate'
 
-	grunt.registerTask 'initialize', ["clean:dist", "coffee", "bower", "copy", "ngAnnotate", "browserify", "uglify", "sass", "clean:sass", "autoprefixer", "cssmin"]
-	grunt.registerTask 'update', ["coffee", "copy", "ngAnnotate", "browserify", "sass", "clean:sass", "autoprefixer"]
+	grunt.registerTask 'initialize', ["clean:dist", "coffee", "bower", "copy:dist", "copy:bower", "clean:bower", "ngAnnotate", "browserify", "uglify", "sass", "clean:sass", "autoprefixer", "cssmin"]
+	grunt.registerTask 'update', ["coffee", "copy:dist", "ngAnnotate", "browserify", "sass", "clean:sass", "autoprefixer"]
 
 	grunt.registerTask 'serve', ["update", "foreman"]
 
