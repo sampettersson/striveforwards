@@ -2,10 +2,13 @@ App = require "../app"
 
 App.controller "menuController", ($scope, $rootScope, $timeout) ->
 
+  $scope.menuButtonCloseHidden = true
+
   $scope.menu = () ->
+
     if $scope.menuActive
+
       $scope.menuTransition = true
-      $scope.menuButtonActive = false
 
       $timeout ->
         $rootScope.applicationViewHidden = false
@@ -14,7 +17,10 @@ App.controller "menuController", ($scope, $rootScope, $timeout) ->
       , 250
 
     else
+
       $scope.menuTransition = false
       $scope.menuActive = true
-      $scope.menuButtonActive = true
       $rootScope.applicationViewHidden = true
+
+      #$timeout ->
+      #, 250

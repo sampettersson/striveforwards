@@ -14,7 +14,6 @@ require "rekapi"
 window.AnimationFrame = require "animation-frame"
 require "spark-scroll"
 
-
 App = angular.module 'strive', ["ngRoute", "gilbox.sparkScroll"]
 
 App.run ['$route', angular.noop]

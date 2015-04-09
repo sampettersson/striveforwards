@@ -26,8 +26,8 @@ application-menu
   nav
     .button
       position: absolute
-      right: 5%
-      top: 5%
+      right: 80px
+      top: 50px
       color: #ffffff
       font-family: "asapmedium", sans-serif
       text-decoration: none
@@ -35,7 +35,27 @@ application-menu
       z-index: 2
 
       i
-        padding-right: 5px
+        opacity: 0
+
+      i.show
+        animation: showButtonMenu 250ms
+        animation-fill-mode: forwards
+
+        @keyframes showButtonMenu
+          0%
+            opacity: 0
+          100%
+            opacity: 1
+
+      i.hide
+        animation: hideButtonMenu 250ms
+        animation-fill-mode: forwards
+
+        @keyframes hideButtonMenu
+          0%
+            opacity: 1
+          100%
+            opacity: 0
 
     .menu.hidden
       display: none
@@ -175,6 +195,8 @@ section.hero
 section.intro
   padding-top: 50px
   padding-bottom: 50px
+  margin-left: 80px
+  margin-right: 80px
 
   .container
     width: 95%
@@ -391,3 +413,46 @@ section.supporter
   background-size: cover
   background-position: bottom center
   min-height: 800px
+
+  h1
+    color: #ffffff
+    font-size: 3.2em
+    max-width: 60%
+    padding-top: 150px
+    margin-left: 80px
+
+  p
+    color: #ffffff
+    font-size: 1.3em
+    max-width: 60%
+    padding-top: 15px
+    margin-left: 80px
+    
+section.footer
+  background: url("graphics/texture.png")
+  background-size: cover
+  padding-top: 30px
+  padding-bottom: 30px
+  color: #ffffff
+
+  p
+    margin-left: 80px
+
+    a
+      color: #ffffff
+      text-decoration: none
+      border-bottom: 1px solid #ffffff
+      
+application-page.notFoundView
+  background: url("graphics/texture.png")
+  display: block
+  width: 100%
+  height: 100%
+  color: #ffffff
+
+  h1
+    margin-left: 80px
+    padding-top: 50px
+
+  p
+    margin-left: 80px
