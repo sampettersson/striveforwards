@@ -1,0 +1,39 @@
+<div class="carousel" data-active-index="{{ activeIndex }}">
+
+    <a href="#" class="back arrow-navigation" ng-click="navigationDot(activeIndex - 1)" ng-class="{'disabled': backDisabled }"><img src="/client/assets/graphics/navigation-arrow.svg" class="arrow" /></a>
+
+    <div class="carousel-container">
+
+        <div class="carousel-item" ng-repeat="item in carouselItems" data-index="{{ $index }}" ng-class="{'active': item.active, 'transitionOutLeft': item.transitionOutLeft, 'transitionOutRight': item.transitionOutRight, 'transitionInLeft': item.transitionInLeft, 'transitionInRight': item.transitionInRight }" ng-style="{ 'background': 'url(' + item.image + ')' }">
+
+            <div class="primary">
+
+                <div class="row-1">
+
+                    <h1 class="headline">{{ item.headline }}</h1>
+
+                    <p class="caption">{{ item.caption }}</p>
+
+                </div>
+
+                <div class="row-2">
+
+                    <p class="country">{{ item.country }}</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="#" class="next arrow-navigation" ng-click="navigationDot(activeIndex + 1)" ng-class="{'disabled': nextDisabled }"><img src="/client/assets/graphics/navigation-arrow.svg" class="arrow" /></a>
+
+</div>
+
+<div class="navigation">
+
+    <a href="#" class="dot" ng-repeat="item in navigationDots" ng-click="navigationDot($index)" ng-class="{'active': item.active}" data-index="{{ $index }}"></a>
+
+</div>

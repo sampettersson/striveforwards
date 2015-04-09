@@ -48,4 +48,13 @@ App.directive "primaryBodyHeadline", ($timeout, $window) ->
 
     , 100
 
+    return directive
+
+App.directive "indexCarousel", () ->
+  directive = {}
+
+  directive.element = "E"
+  directive.templateUrl = "/client/views/carouselView.html"
+  directive.controller = "carouselController"
+
   return directive

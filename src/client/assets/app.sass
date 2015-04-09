@@ -186,3 +186,161 @@ section.intro
 
 section.people
   background: url("graphics/texture.png")
+
+  .heading
+    padding-top: 25px
+    padding-bottom: 25px
+    text-align: center
+    color: #ffffff
+    font-size: 1.3em
+
+  .carousel
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .carousel-container
+      height: 650px
+      max-width: 1100px
+      width: 100%
+      position: relative
+
+      .carousel-item
+        opacity: 0
+        height: 100%
+        width: 100%
+        position: absolute
+        background-size: cover
+        border-radius: 5px
+
+        .primary
+          position: absolute
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 100%
+          left: 0
+          background: rgba(168,37,77, 0.8)
+          color: #ffffff
+          bottom: 0px
+          padding: 25px
+
+          .row-1
+            flex: 0 0 70%
+
+            .headline
+              font-size: 1.8em
+              text-transform: uppercase
+              padding-bottom: 15px
+              font-family: "asapmedium", sans-serif
+
+          .row-2
+            flex: 0 0 30%
+            text-align: center
+
+            .country
+              font-family: "asapmedium", sans-serif
+              text-transform: uppercase
+              font-size: 1.4em
+
+
+
+        &.active
+          opacity: 1
+          z-index: 3
+
+        &.transitionOutLeft
+          animation: carouselTransitionOutLeft 250ms
+          animation-fill-mode: forwards
+
+          @keyframes carouselTransitionOutLeft
+            0%
+              transform: translateX(0%)
+              opacity: 1
+            100%
+              transform: translateX(-100%)
+              opacity: 0
+
+      .carousel-item.transitionOutRight
+        animation: carouselTransitionOutRight 250ms
+        animation-fill-mode: forwards
+
+        @keyframes carouselTransitionOutRight
+          0%
+            transform: translateX(0%)
+            opacity: 1
+          100%
+            transform: translateX(100%)
+            opacity: 0
+
+      .carousel-item.transitionInLeft
+        animation: carouselTransitionInLeft 250ms
+        animation-fill-mode: forwards
+
+        @keyframes carouselTransitionInLeft
+          0%
+            transform: translateX(-100%)
+            opacity: 0
+          100%
+            transform: translateX(0%)
+            opacity: 1
+
+      .carousel-item.transitionInRight
+        animation: carouselTransitionInRight 250ms
+        animation-fill-mode: forwards
+
+        @keyframes carouselTransitionInRight
+          0%
+            transform: translateX(100%)
+            opacity: 0
+          100%
+            transform: translateX(0%)
+            opacity: 1
+
+    .arrow-navigation
+      display: flex
+      align-items: center
+      height: 45px
+      width: 45px
+      border: 3px solid #ffffff
+      border-radius: 50%
+      z-index: 4
+      transition: opacity 250ms
+
+      img
+        width: 12px
+        margin: 0 auto
+        padding-left: 2px
+
+      &.back
+        margin-right: 25px
+        transform: rotate(180deg)
+
+      &.next
+        margin-left: 25px
+
+      &.disabled
+        opacity: 0.5
+
+  .navigation
+    display: block
+    width: 100%
+    padding-top: 25px
+    padding-bottom: 25px
+    text-align: center
+
+    .dot
+      display: inline-block
+      width: 15px
+      height: 15px
+      border: 2px solid #ffffff
+      background: #ffffff
+      border-radius: 50%
+      margin-left: 10px
+
+      &:first-child
+        margin-left: 0px
+
+    .dot.active
+      background: 0
+      transition: background 250ms
