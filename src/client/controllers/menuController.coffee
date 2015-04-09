@@ -1,14 +1,20 @@
 App = require "../app"
 
-App.controller "menuController", ($scope, $rootScope) ->
+App.controller "menuController", ($scope, $rootScope, $timeout) ->
 
   $scope.menu = () ->
-    console.log "menu"
-
     if $scope.menuActive
-      $rootScope.applicationViewHidden = false
-      $scope.menuActive = false
+      $scope.menuTransition = true
+      $scope.menuButtonActive = false
+
+      $timeout ->
+        $rootScope.applicationViewHidden = false
+        $scope.menuActive = false
+        $scope.menuTransition = false
+      , 250
 
     else
+      $scope.menuTransition = false
       $scope.menuActive = true
+      $scope.menuButtonActive = true
       $rootScope.applicationViewHidden = true

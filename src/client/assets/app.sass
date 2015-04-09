@@ -15,8 +15,12 @@ body
   height: 100%
   font-family: "asapregular", sans-serif
 
-.hide
-  display: none
+application-view
+  display: block
+
+application-view.hide
+  overflow-x: hidden
+  height: 100%
 
 application-menu
   nav
@@ -28,15 +32,40 @@ application-menu
       font-family: "asapmedium", sans-serif
       text-decoration: none
       font-size: 1.3em
-      z-index: 1
+      z-index: 2
 
       i
         padding-right: 5px
 
-    .menu.hide
+    .menu.hidden
       display: none
 
+    .menu.show
+      animation: showMenu 250ms
+      animation-fill-mode: forwards
+
+      @keyframes showMenu
+        0%
+          top: -100%
+          opacity: 0
+        100%
+          top: 0
+          opacity: 1
+
+    .menu.hide
+      animation: hideMenu 250ms
+      animation-fill-mode: forwards
+
+      @keyframes hideMenu
+        0%
+          top: 0
+          opacity: 1
+        100%
+          top: -100%
+          opacity: 0
+
     .menu
+      opacity: 0
       display: flex
       align-items: center
       justify-content: center
@@ -46,6 +75,7 @@ application-menu
       width: 100%
       min-height: 100%
       text-align: center
+      z-index: 1
 
       .darken
         left: 0
@@ -346,3 +376,18 @@ section.people
     .dot.active
       background: 0
       transition: background 250ms
+
+section.events
+  padding-top: 25px
+  padding-bottom: 25px
+
+  .heading
+    color: #F6014A
+    text-align: center
+    font-size: 1.3em
+    
+section.supporter
+  background: url("images/holi.jpg")
+  background-size: cover
+  background-position: bottom center
+  min-height: 800px

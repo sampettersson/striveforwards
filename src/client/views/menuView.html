@@ -1,6 +1,6 @@
 <nav ng-controller="menuController">
-    <a href="#" class="button" ng-click="menu()">MENU <i class="fa" ng-class="{ 'fa-bars': !menuActive, 'fa-close': menuActive }"></i></a>
-    <div class="menu" ng-class="{ 'hide': !menuActive }">
+    <a href="#" class="button" ng-click="menu()">MENU <i class="fa" ng-class="{ 'fa-bars': !menuButtonActive, 'fa-close': menuButtonActive }"></i></a>
+    <div class="menu" ng-class="{ 'hidden': !menuActive, 'show': menuActive, 'hide': menuTransition  }">
 
         <div class="container">
 
