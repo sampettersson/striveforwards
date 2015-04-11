@@ -16,5 +16,13 @@ App.directive "applicationMenu", ->
 
   return directive
 
+App.directive "applicationModal", ->
+  directive = {}
+
+  directive.restrict = "E"
+  directive.templateUrl = "/client/views/modalView.html"
+  directive.controller = "applicationModalController"
+
+  return directive
 
 App.controller 'applicationController', ($scope, $rootScope) ->

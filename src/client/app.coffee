@@ -11,8 +11,9 @@ require "angular-route"
 require "lodash"
 require "shifty"
 require "rekapi"
-window.AnimationFrame = require "animation-frame"
 require "spark-scroll"
+
+window.AnimationFrame = require "animation-frame"
 
 App = angular.module 'strive', ["ngRoute", "gilbox.sparkScroll"]
 

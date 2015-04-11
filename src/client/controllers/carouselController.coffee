@@ -11,14 +11,8 @@ App.controller "carouselController", ($scope, $timeout) ->
       country: "United States"
     }
     {
-      image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-      headline: "someone"
-      caption: "The first openly gay person to be elected in california, Harvey dreamt about a better tomorrow a world filled with hope and equality where hate didn’t rule."
-      country: "United States"
-    }
-    {
-      image: "http://letsbookaroom.com/wp-content/uploads/2012/10/New-YC.jpg"
-      headline: "someone"
+      image: "/client/assets/images/harvey.milk.jpg"
+      headline: "Harvey Milk"
       caption: "The first openly gay person to be elected in california, Harvey dreamt about a better tomorrow a world filled with hope and equality where hate didn’t rule."
       country: "United States"
     }

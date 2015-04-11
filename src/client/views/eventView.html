@@ -1,0 +1,24 @@
+<ul>
+
+    <li ng-repeat="item in eventItems" ng-init="hover = false">
+
+        <div class="body">
+
+            <h3>{{ item.navigation.heading }}</h3>
+
+            <p>{{ item.navigation.body }}</p>
+
+        </div>
+
+        <div class="body-bg" ng-style="{'background': 'url(' + item.navigation.image + ')', 'background-size': 'cover'}">
+        </div>
+
+        <div class="bar">
+
+            <a href="#" ng-click="openModal(item.modal)">Read More</a>
+
+        </div>
+
+    </li>
+
+</ul>

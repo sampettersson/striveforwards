@@ -58,3 +58,12 @@ App.directive "indexCarousel", () ->
   directive.controller = "carouselController"
 
   return directive
+
+App.directive "eventView", ->
+  directive = {}
+
+  directive.element = "E"
+  directive.templateUrl = "/client/views/eventView.html"
+  directive.controller = "eventController"
+
+  return directive

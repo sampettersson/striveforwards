@@ -1,0 +1,24 @@
+<div class="modal-container" ng-class="{hide: !active}" ng-click="hideModal($event)">
+
+    <div class="modal-contents" ng-if="active" ng-class="{fadeOut: fadeOut}">
+
+        <div class="modal">
+
+            <div class="image" ng-style="{'background': 'url(' + image + ')', 'background-size': 'cover'}"></div>
+
+            <h1>{{ heading }}</h1>
+            <p>{{ body }}</p>
+
+        </div>
+
+        <div class="close">
+
+            <i class="fa fa-close"></i>
+
+        </div>
+
+        <div class="modal-bg"></div>
+
+    </div>
+
+</div>

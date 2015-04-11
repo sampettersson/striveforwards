@@ -15,12 +15,91 @@ body
   height: 100%
   font-family: "asapregular", sans-serif
 
+  &.disable-scroll
+    overflow: hidden
+
 application-view
   display: block
 
 application-view.hide
   overflow-x: hidden
   height: 100%
+
+application-modal
+  .modal-container
+    display: block
+    position: fixed
+    width: 100%
+    height: 100%
+    z-index: 4
+    top: 0
+    left: 0
+
+    &.hide
+      display: none
+
+    .modal-contents
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100%
+      height: 100%
+      animation: modalFadeIn 250ms
+      animation-fill-mode: forwards
+
+      @keyframes modalFadeIn
+        0%
+          opacity: 0
+        100%
+          opacity: 1
+
+      &.fadeOut
+        animation: modalFadeOut 250ms
+        animation-fill-mode: forwards
+
+        @keyframes modalFadeOut
+          0%
+            opacity: 1
+          100%
+            opacity: 0
+
+      .image
+        width: 100%
+        height: 30%
+        min-height: 400px
+
+      .close
+        position: relative
+        z-index: 4
+        color: #ffffff
+        font-size: 1.6em
+        margin-left: 20px
+        height: 90%
+
+        i
+          cursor: pointer
+
+    .modal
+      opacity: 1
+      transition: opacity 250ms
+      position: relative
+      z-index: 4
+      background: url("graphics/texture.png")
+      width: 80%
+      height: 90%
+      max-width: 800px
+      overflow: scroll
+      border-radius: 5px
+
+    .modal-bg
+      opacity: 1
+      transition: opacity 250ms
+      background: rgba(0,0,0,0.5)
+      height: 100%
+      width: 100%
+      top: 0
+      left: 0
+      position: absolute
 
 application-menu
   nav
@@ -310,8 +389,6 @@ section.people
               text-transform: uppercase
               font-size: 1.4em
 
-
-
         &.active
           opacity: 1
           z-index: 3
@@ -420,7 +497,74 @@ section.events
     color: #F6014A
     text-align: center
     font-size: 1.3em
-    
+
+  ul
+    padding-top: 15px
+    list-style-type: none
+    display: flex
+    justify-content: center
+    align-items: center
+
+    li
+      height: 350px
+      width: 250px
+      color: #ffffff
+      position: relative
+      overflow: hidden
+      border-radius: 5px
+
+      &:hover
+
+        .body-bg
+          transform: scale(1.5)
+
+        .bar
+          transform: translateY(0%)
+
+      .body
+        width: 80%
+        margin: 0 auto
+        padding-top: 25px
+        position: relative
+        z-index: 2
+
+      .body-bg
+        position: absolute
+        top: 0%
+        height: 100%
+        width: 100%
+        transform: scale(1)
+        transition: transform 250ms
+
+      .bar
+        background: url("graphics/texture.png")
+        position: absolute
+        padding-bottom: 15px
+        padding-top: 15px
+        width: 100%
+        bottom: 0
+        transform: translateY(100%)
+        transition: transform 250ms
+
+        a
+          float: right
+          padding: 5px
+          padding-left: 10px
+          padding-right: 10px
+          border-radius: 5px
+          color: #ffffff
+          margin-right: 10%
+          margin-right: calc(10% - 10px)
+          text-decoration: none
+          text-transform: uppercase
+          font-family: "asapmedium", sans-serif
+
+          &:hover
+            background: rgba(0,0,0,0.3)
+
+          &:active
+            background: rgba(0,0,0,0.5)
+
 section.supporter
   background: url("images/holi.jpg")
   background-size: cover
