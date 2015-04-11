@@ -1,6 +1,6 @@
 App = require "../app"
 
-App.controller "menuController", ($scope, $rootScope, $timeout) ->
+App.controller "menuController", ($scope, $rootScope, $timeout, $document, $location) ->
 
   $scope.menuButtonCloseHidden = true
 
@@ -22,5 +22,19 @@ App.controller "menuController", ($scope, $rootScope, $timeout) ->
       $scope.menuActive = true
       $rootScope.applicationViewHidden = true
 
-      #$timeout ->
-      #, 250
+  $scope.scrollTo = (query) ->
+
+    if $location.path() is '/'
+      element = angular.element document.getElementById(query)
+      $document.scrollToElementAnimated element, 0, 1500
+
+    else
+
+      event = $rootScope.$on '$viewContentLoaded', ->
+        # Scroll to desired element
+        element = angular.element document.getElementById(query)
+        $document.scrollToElementAnimated element, 0, 1500
+        # Stop listening to event
+        event()
+
+      $location.path('/')

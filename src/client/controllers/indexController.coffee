@@ -1,6 +1,9 @@
 App = require "../app"
 
-App.controller 'indexController', ($scope, $rootScope) ->
+App.controller 'indexController', ($scope, $document) ->
+  $scope.scroll = ->
+    element = angular.element document.getElementById('intro')
+    $document.scrollToElementAnimated element, 0, 1500
 
 App.directive "arrowContainer", ($timeout) ->
   directive = {}

@@ -50,7 +50,7 @@
     "shifty": "./dist/client/vendor/components/shifty/dist/shifty.js",
     "animation-frame": "./dist/client/vendor/components/animation-frame/index.js",
     "rekapi": "./dist/client/vendor/components/rekapi/dist/rekapi.js",
-    "angular-socialshare": "./dist/client/vendor/components/angular-socialshare/angular-socialshare.js"
+    "angular-scroll": "./dist/client/vendor/components/angular-scroll/angular-scroll.js"
   },
   "browserify-shim": {
     "rekapi": "Rekapi",

@@ -1,6 +1,6 @@
 <ul>
 
-    <li ng-repeat="item in eventItems" ng-init="hover = false">
+    <li ng-repeat="item in eventItems" ng-init="hover = false" ng-click="openModal(item.modal)">
 
         <div class="body">
 
@@ -15,7 +15,7 @@
 
         <div class="bar">
 
-            <a href="#" ng-click="openModal(item.modal)">Read More</a>
+            <a href="#">Read More</a>
 
         </div>
 

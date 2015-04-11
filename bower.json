@@ -24,7 +24,8 @@
     "spark-scroll": "*",
     "animation-frame": "~0.2.4",
     "animate-css": "~3.2.6",
-    "angular-socialshare": "~1.3.0"
+    "angular-socialshare": "~1.3.0",
+    "angular-scroll": "~0.6.5"
   },
   "resolutions": {
     "shifty": "1.2.2"
