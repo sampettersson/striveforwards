@@ -5,102 +5,12 @@ App.controller "eventController", ($scope) ->
   $scope.eventItems = [
     {
       navigation:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
+        image: "/client/assets/images/events.1972.sweden.small.jpg"
+        heading: "1972"
+        body: "Sweden becomes first country in the world to allow transsexuals to legally change their sex, and provides free hormone therapy."
       modal:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-    }
-    {
-      navigation:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-      modal:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-    }
-    {
-      navigation:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-      modal:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-    }
-    {
-      navigation:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-      modal:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-    }
-    {
-      navigation:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-      modal:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-    }
-    {
-      navigation:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-      modal:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-    }
-    {
-      navigation:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-      modal:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-    }
-    {
-      navigation:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-      modal:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-    }
-    {
-      navigation:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-      modal:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-    }
-    {
-      navigation:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
-        body: "SOMETHING RANDOM"
-      modal:
-        image: "http://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        heading: "1924"
+        image: "/client/assets/images/events.1972.sweden.jpg"
+        heading: "1972"
         body: "SOMETHING RANDOM"
     }
   ]

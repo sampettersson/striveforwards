@@ -31,7 +31,7 @@ App.controller "carouselController", ($scope, $timeout) ->
     {
       image: "/client/assets/images/nikolay.alexeyev.jpg"
       headline: "Nikolay Alexeyev"
-      caption: "LGBT Rights Activist and was the founder and chief organizer of the Moscow Pride event, despite the risks of being attacked by opponents."
+      caption: "LGBT Rights Activist and was the founder and chief organizer of the Moscow Pride event, despite the risks of being attacked by his opponents."
       country: "Russia"
     }
   ]

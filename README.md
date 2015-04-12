@@ -6,17 +6,17 @@ Hello there! This is **Strive Forwards**, the creative task for my application t
 
 Let me introduce **Strive Forwards**.
 
-## A source of inspiration by history
+## A source of inspiration curated by history
 
 **Strive Forwards** aims to interest people in LGBT rights by presenting a timeline of events and people which has been important to the movement in the past.
 
 ## The technology
 
-**Strive Forwards** runs with the help of **Node.JS** and uses **Angular.js** for it's front-end, for build/development automation it uses **Grunt**
+**Strive Forwards** runs on **Node.JS** and uses **Angular.js** for it's front-end, for build/development automation it uses **Grunt**.
 
 ## See it live
 
-If you want to be daring you can build and run **Strive Forwards** by following the steps below or if you are a bit less daring you can visit **Strive Forwards** hosted on **Heroku** by clicking the link below.
+If you want to be daring you can build and run **Strive Forwards** by following the steps under **"Locally with grunt"** or if you are a bit less daring you can visit **Strive Forwards** hosted on **Heroku** by clicking the link below.
 
 #### Hosted on **Heroku**
 
