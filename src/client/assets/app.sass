@@ -73,6 +73,34 @@ application-modal
           100%
             opacity: 0
 
+      .mobile-close
+        display: none
+        background: url("graphics/texture.png")
+        width: 100%
+        padding-top: 20px
+        padding-bottom: 20px
+
+        &:after
+          display: table
+          clear: both
+          content: ''
+
+        a
+          float: right
+          margin-right: 15px
+          color: #ffffff
+          font-size: 1.3em
+          padding: 10px
+          text-decoration: none
+          border-radius: 5px
+          font-family: "asapmedium", sans-serif
+
+          &:hover
+            background: rgba(0,0,0,0.3)
+
+          &:active
+            background: rgba(0,0,0,0.5)
+
       .image
         width: 100%
         height: 30%
@@ -611,6 +639,14 @@ section.supporter
     max-width: 60%
     padding-top: 15px
     margin-left: 80px
+    padding-bottom: 25px
+
+  img.heart
+    margin-left: 80px
+
+  img.logo
+    margin-left: 10px
+
     
 section.footer
   background: url("graphics/texture.png")
@@ -666,6 +702,16 @@ application-page.notFoundView
     margin-left: 80px
 
 @media screen and (max-width: 800px)
+
+  application-modal .modal-container .modal
+    width: 100%
+    height: 100%
+
+  application-modal .modal-container .modal-contents .close
+    display: none
+
+  application-modal .modal-container .modal-contents .mobile-close
+    display: block
 
   application-menu nav .button
     top: 25px

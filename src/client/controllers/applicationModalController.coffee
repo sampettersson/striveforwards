@@ -12,6 +12,8 @@ App.controller "applicationModalController", ($scope, $rootScope, $timeout) ->
 
   $scope.hideModal = ($event) ->
 
+    console.log $event.target.className
+
     hideIt = () ->
 
       $scope.fadeOut = true
@@ -25,5 +27,6 @@ App.controller "applicationModalController", ($scope, $rootScope, $timeout) ->
 
     switch $event.target.className
       when "modal-bg" then hideIt()
+      when "mobile-close-button" then hideIt()
       when "fa fa-close" then hideIt()
 
