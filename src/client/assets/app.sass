@@ -111,6 +111,9 @@ application-modal
         padding-top: 15px
         margin-left: 30px
 
+      .heading.no-image
+        padding-top: 50px
+
       .body
         font-size: 1em
         padding-top: 10px
@@ -620,27 +623,71 @@ section.supporter
   background-position: bottom center
   min-height: 800px
 
+  .container
+    margin-left: 80px
+
   h1
     color: #ffffff
     font-size: 3.2em
     max-width: 60%
     padding-top: 150px
-    margin-left: 80px
 
   p
     color: #ffffff
     font-size: 1.3em
     max-width: 60%
     padding-top: 15px
-    margin-left: 80px
     padding-bottom: 25px
 
-  img.heart
-    margin-left: 80px
+  h2
+    color: #ffffff
+    font-family: "asapmedium", sans-serif
+    font-size: 2em
+    max-width: 60%
+    text-transform: uppercase
+    padding-bottom: 25px
 
-  img.logo
-    margin-left: 10px
+  h3
+    color: #ffffff
+    text-transform: uppercase
+    padding-bottom: 15px
+    font-size: 1.5em
 
+  .form
+    padding-bottom: 25px
+
+    input
+      border: 0
+      background: rgba(0,0,0,0.3)
+      color: #ffffff
+      font-family: "asapregular", sans-serif
+      padding: 15px
+      outline: 0
+      border-radius: 5px
+      font-family: "asapregular", sans-serif
+      text-transform: uppercase
+      font-size: 1em
+      width: 300px
+
+      &::placeholder
+        color: #ffffff
+
+      &:focus
+        background: rgba(0,0,0,0.5)
+
+    a
+      color: #ffffff
+      text-decoration: none
+      border-radius: 5px
+      margin-left: 10px
+      font-size: 1em
+      padding: 15px
+
+      &:hover
+        background: rgba(0,0,0,0.3)
+
+      &:active
+        background: rgba(0,0,0,0.5)
     
 section.footer
   background: url("graphics/texture.png")

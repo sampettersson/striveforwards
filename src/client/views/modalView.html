@@ -6,9 +6,9 @@
 
             <div class="mobile-close"><a href="#" class="mobile-close-button">CLOSE <i class="fa fa-close"></i></a></div>
 
-            <div class="image" ng-style="{'background': 'url(' + image + ')', 'background-size': 'cover'}"></div>
+            <div class="image" ng-style="{'background': 'url(' + image + ')', 'background-size': 'cover'}" ng-if="image"></div>
 
-            <h1 class="heading">{{ heading }}</h1>
+            <h1 class="heading" ng-class="{'no-image': !image}">{{ heading }}</h1>
             <p class="body">{{ body }}</p>
 
         </div>
