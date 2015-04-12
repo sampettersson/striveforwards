@@ -19,13 +19,19 @@ App.controller "carouselController", ($scope, $timeout) ->
     {
       image: "/client/assets/images/camille.cabral.jpg"
       headline: "Camille Cabral"
-      caption: "The first transsexual woman to be elected in the history of the french republic. Camille actively fought against pimps and trafficking and was a co-organizer of the Pute Pride march."
+      caption: "The first transsexual woman to be elected in the history of the French Republic. Camille actively fought against pimps and trafficking and was a co-organizer of the Pute Pride march."
       country: "France"
     }
     {
       image: "/client/assets/images/nadezhda.tolokonnikova.jpg"
       headline: "Nadezhda Tolokonnikova"
-      caption: "Human rights activist who fought for women's and LGBT people's rights in russia, a strong opposer against the russian government and it's controversial laws."
+      caption: "Human Rights Activist who fought for women's and LGBT people's rights in Russia, a strong opposer against the russian government and its controversial laws."
+      country: "Russia"
+    }
+    {
+      image: "/client/assets/images/nikolay.alexeyev.jpg"
+      headline: "Nikolay Alexeyev"
+      caption: "LGBT Rights Activist and was the founder and chief organizer of the Moscow Pride event, despite the risks of being attacked by opponents."
       country: "Russia"
     }
   ]

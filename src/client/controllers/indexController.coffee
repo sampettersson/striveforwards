@@ -3,7 +3,7 @@ App = require "../app"
 App.controller 'indexController', ($scope, $document) ->
 
   $scope.content = {
-    primaryBodyHeadline: "OUR WORLD IS A DARK PLACE LET'S TURN THE LIGHTS ON"
+    primaryBodyHeadline: "OUR WORLD IS A DARK PLACE LET'S TURN THE LIGHTS ON TOGETHER!"
   }
 
   $scope.scroll = ->
