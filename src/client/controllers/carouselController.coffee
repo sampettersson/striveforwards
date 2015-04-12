@@ -17,10 +17,16 @@ App.controller "carouselController", ($scope, $timeout) ->
       country: "United States"
     }
     {
-      image: "/client/assets/images/harvey.milk.jpg"
-      headline: "Harvey Milk"
-      caption: "The first openly gay person to be elected in california, Harvey dreamt about a better tomorrow a world filled with hope and equality where hate didn’t rule."
-      country: "United States"
+      image: "/client/assets/images/camille.cabral.jpg"
+      headline: "Camille Cabral"
+      caption: "The first transsexual woman to be elected in the history of the french republic. Camille actively fought against pimps and trafficking and was a co-organizer of the Pute Pride march."
+      country: "France"
+    }
+    {
+      image: "/client/assets/images/nadezhda.tolokonnikova.jpg"
+      headline: "Nadezhda Tolokonnikova"
+      caption: "Human rights activist who fought for women's and LGBT people's rights in russia, a strong opposer against the russian government and it's controversial laws."
+      country: "Russia"
     }
   ]
 

@@ -1,0 +1,368 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '//',
+1 verbose cli   'Download',
+1 verbose cli   'all',
+1 verbose cli   'node.js',
+1 verbose cli   'dependencies' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ '//', null ]
+6 verbose cache add name=undefined spec="//" args=["//",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '//',
+7 verbose parsed url   path: '//',
+7 verbose parsed url   href: '//' }
+8 verbose cache add [ 'Download', null ]
+9 verbose cache add name=undefined spec="Download" args=["Download",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'Download',
+10 verbose parsed url   path: 'Download',
+10 verbose parsed url   href: 'Download' }
+11 verbose cache add [ 'all', null ]
+12 verbose cache add name=undefined spec="all" args=["all",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'all',
+13 verbose parsed url   path: 'all',
+13 verbose parsed url   href: 'all' }
+14 verbose cache add [ 'node.js', null ]
+15 verbose cache add name=undefined spec="node.js" args=["node.js",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'node.js',
+16 verbose parsed url   path: 'node.js',
+16 verbose parsed url   href: 'node.js' }
+17 verbose cache add [ 'dependencies', null ]
+18 verbose cache add name=undefined spec="dependencies" args=["dependencies",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'dependencies',
+19 verbose parsed url   path: 'dependencies',
+19 verbose parsed url   href: 'dependencies' }
+20 silly lockFile ebbffb7d- //
+21 verbose lock // /Users/skolan/.npm/ebbffb7d-.lock
+22 silly lockFile a479c9c3-Download Download
+23 verbose lock Download /Users/skolan/.npm/a479c9c3-Download.lock
+24 silly lockFile d87c4480-all all
+25 verbose lock all /Users/skolan/.npm/d87c4480-all.lock
+26 silly lockFile 90de35a5-node-js node.js
+27 verbose lock node.js /Users/skolan/.npm/90de35a5-node-js.lock
+28 silly lockFile 495117c3-dependencies dependencies
+29 verbose lock dependencies /Users/skolan/.npm/495117c3-dependencies.lock
+30 silly lockFile d87c4480-all all
+31 silly lockFile d87c4480-all all
+32 silly lockFile a479c9c3-Download Download
+33 silly lockFile a479c9c3-Download Download
+34 verbose addNamed [ 'all', '' ]
+35 verbose addNamed [ null, '*' ]
+36 silly lockFile d3a3b222-all all@
+37 verbose lock all@ /Users/skolan/.npm/d3a3b222-all.lock
+38 silly lockFile ebbffb7d- //
+39 silly lockFile ebbffb7d- //
+40 silly lockFile 495117c3-dependencies dependencies
+41 silly lockFile 495117c3-dependencies dependencies
+42 verbose addNamed [ 'Download', '' ]
+43 verbose addNamed [ null, '*' ]
+44 silly lockFile e43a4e77-Download Download@
+45 verbose lock Download@ /Users/skolan/.npm/e43a4e77-Download.lock
+46 silly lockFile 90de35a5-node-js node.js
+47 silly lockFile 90de35a5-node-js node.js
+48 error addLocal Could not install //
+49 verbose addNamed [ 'dependencies', '' ]
+50 verbose addNamed [ null, '*' ]
+51 silly lockFile 31f3ba08-dependencies dependencies@
+52 verbose lock dependencies@ /Users/skolan/.npm/31f3ba08-dependencies.lock
+53 silly addNameRange { name: 'all', range: '*', hasData: false }
+54 verbose addNamed [ 'node.js', '' ]
+55 verbose addNamed [ null, '*' ]
+56 silly lockFile bdfb93ff-node-js node.js@
+57 verbose lock node.js@ /Users/skolan/.npm/bdfb93ff-node-js.lock
+58 silly addNameRange { name: 'Download', range: '*', hasData: false }
+59 silly addNameRange { name: 'dependencies', range: '*', hasData: false }
+60 verbose request where is /all
+61 verbose request registry https://registry.npmjs.org/
+62 verbose request id 91492ddf86a7c2c2
+63 verbose url raw /all
+64 verbose url resolving [ 'https://registry.npmjs.org/', './all' ]
+65 verbose url resolved https://registry.npmjs.org/all
+66 verbose request where is https://registry.npmjs.org/all
+67 info trying registry request attempt 1 at 18:35:05
+68 http GET https://registry.npmjs.org/all
+69 verbose request where is /dependencies
+70 verbose request registry https://registry.npmjs.org/
+71 verbose url raw /dependencies
+72 verbose url resolving [ 'https://registry.npmjs.org/', './dependencies' ]
+73 verbose url resolved https://registry.npmjs.org/dependencies
+74 verbose request where is https://registry.npmjs.org/dependencies
+75 info trying registry request attempt 1 at 18:35:05
+76 http GET https://registry.npmjs.org/dependencies
+77 silly addNameRange { name: 'node.js', range: '*', hasData: false }
+78 verbose request where is /node.js
+79 verbose request registry https://registry.npmjs.org/
+80 verbose url raw /node.js
+81 verbose url resolving [ 'https://registry.npmjs.org/', './node.js' ]
+82 verbose url resolved https://registry.npmjs.org/node.js
+83 verbose request where is https://registry.npmjs.org/node.js
+84 info trying registry request attempt 1 at 18:35:05
+85 http GET https://registry.npmjs.org/node.js
+86 verbose request where is /Download
+87 verbose request registry https://registry.npmjs.org/
+88 verbose url raw /Download
+89 verbose url resolving [ 'https://registry.npmjs.org/', './Download' ]
+90 verbose url resolved https://registry.npmjs.org/Download
+91 verbose request where is https://registry.npmjs.org/Download
+92 info trying registry request attempt 1 at 18:35:05
+93 verbose etag "CHYQD8UW2F0W2BXHOHCH6PEHK"
+94 http GET https://registry.npmjs.org/Download
+95 http 200 https://registry.npmjs.org/node.js
+96 silly registry.get cb [ 200,
+96 silly registry.get   { date: 'Sun, 12 Apr 2015 16:35:06 GMT',
+96 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+96 silly registry.get     etag: '"681PHIK8OM2KNYCBZRHWADEFY"',
+96 silly registry.get     'content-type': 'application/json',
+96 silly registry.get     'cache-control': 'max-age=60',
+96 silly registry.get     'content-length': '1053',
+96 silly registry.get     'accept-ranges': 'bytes',
+96 silly registry.get     via: '1.1 varnish',
+96 silly registry.get     age: '0',
+96 silly registry.get     'x-served-by': 'cache-fra1228-FRA',
+96 silly registry.get     'x-cache': 'MISS',
+96 silly registry.get     'x-cache-hits': '0',
+96 silly registry.get     'x-timer': 'S1428856506.170146,VS0,VE178',
+96 silly registry.get     vary: 'Accept',
+96 silly registry.get     'keep-alive': 'timeout=10, max=50',
+96 silly registry.get     connection: 'Keep-Alive' } ]
+97 silly addNameRange number 2 { name: 'node.js', range: '*', hasData: true }
+98 silly addNameRange versions [ 'node.js', [ '0.0.0' ] ]
+99 verbose addNamed [ 'node.js', '0.0.0' ]
+100 verbose addNamed [ '0.0.0', '0.0.0' ]
+101 silly lockFile 97ab6981-node-js-0-0-0 node.js@0.0.0
+102 verbose lock node.js@0.0.0 /Users/skolan/.npm/97ab6981-node-js-0-0-0.lock
+103 silly lockFile 5feca166-js-org-node-js-node-js-0-0-0-tgz https://registry.npmjs.org/node.js/-/node.js-0.0.0.tgz
+104 verbose lock https://registry.npmjs.org/node.js/-/node.js-0.0.0.tgz /Users/skolan/.npm/5feca166-js-org-node-js-node-js-0-0-0-tgz.lock
+105 verbose addRemoteTarball [ 'https://registry.npmjs.org/node.js/-/node.js-0.0.0.tgz',
+105 verbose addRemoteTarball   '508e06f96b9d9bf87fe6bfa84eceb31794fc1c87' ]
+106 info retry fetch attempt 1 at 18:35:06
+107 verbose fetch to= /var/folders/_4/6m668g5j5_x23wv_4ljrthcc0000gp/T/npm-41973-0UFNibmd/registry.npmjs.org/node.js/-/node.js-0.0.0.tgz
+108 http GET https://registry.npmjs.org/node.js/-/node.js-0.0.0.tgz
+109 http 200 https://registry.npmjs.org/dependencies
+110 silly registry.get cb [ 200,
+110 silly registry.get   { date: 'Sun, 12 Apr 2015 16:35:06 GMT',
+110 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+110 silly registry.get     etag: '"AH70JZ5BL3WZFBG01RZ593EW4"',
+110 silly registry.get     'content-type': 'application/json',
+110 silly registry.get     'cache-control': 'max-age=60',
+110 silly registry.get     'content-length': '5989',
+110 silly registry.get     'accept-ranges': 'bytes',
+110 silly registry.get     via: '1.1 varnish',
+110 silly registry.get     age: '0',
+110 silly registry.get     'x-served-by': 'cache-fra1222-FRA',
+110 silly registry.get     'x-cache': 'MISS',
+110 silly registry.get     'x-cache-hits': '0',
+110 silly registry.get     'x-timer': 'S1428856506.290908,VS0,VE120',
+110 silly registry.get     vary: 'Accept',
+110 silly registry.get     'keep-alive': 'timeout=10, max=50',
+110 silly registry.get     connection: 'Keep-Alive' } ]
+111 silly addNameRange number 2 { name: 'dependencies', range: '*', hasData: true }
+112 silly addNameRange versions [ 'dependencies', [ '0.0.1' ] ]
+113 verbose addNamed [ 'dependencies', '0.0.1' ]
+114 verbose addNamed [ '0.0.1', '0.0.1' ]
+115 silly lockFile 58437f50-dependencies-0-0-1 dependencies@0.0.1
+116 verbose lock dependencies@0.0.1 /Users/skolan/.npm/58437f50-dependencies-0-0-1.lock
+117 silly lockFile e1992e94-endencies-dependencies-0-0-1-tgz https://registry.npmjs.org/dependencies/-/dependencies-0.0.1.tgz
+118 verbose lock https://registry.npmjs.org/dependencies/-/dependencies-0.0.1.tgz /Users/skolan/.npm/e1992e94-endencies-dependencies-0-0-1-tgz.lock
+119 verbose addRemoteTarball [ 'https://registry.npmjs.org/dependencies/-/dependencies-0.0.1.tgz',
+119 verbose addRemoteTarball   'f882327b18b42842ead3f4f08624dd3e99f15b25' ]
+120 info retry fetch attempt 1 at 18:35:06
+121 verbose fetch to= /var/folders/_4/6m668g5j5_x23wv_4ljrthcc0000gp/T/npm-41973-0UFNibmd/registry.npmjs.org/dependencies/-/dependencies-0.0.1.tgz
+122 http GET https://registry.npmjs.org/dependencies/-/dependencies-0.0.1.tgz
+123 http 404 https://registry.npmjs.org/Download
+124 verbose headers { date: 'Sun, 12 Apr 2015 16:35:06 GMT',
+124 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+124 verbose headers   'content-type': 'application/json',
+124 verbose headers   'cache-control': 'max-age=0',
+124 verbose headers   'content-length': '51',
+124 verbose headers   'accept-ranges': 'bytes',
+124 verbose headers   via: '1.1 varnish',
+124 verbose headers   age: '0',
+124 verbose headers   'x-served-by': 'cache-fra1226-FRA',
+124 verbose headers   'x-cache': 'MISS',
+124 verbose headers   'x-cache-hits': '0',
+124 verbose headers   'x-timer': 'S1428856506.168993,VS0,VE427',
+124 verbose headers   'keep-alive': 'timeout=10, max=50',
+124 verbose headers   connection: 'Keep-Alive' }
+125 silly registry.get cb [ 304, undefined ]
+126 verbose etag https://registry.npmjs.org/Download from cache
+127 http 200 https://registry.npmjs.org/all
+128 silly registry.get cb [ 200,
+128 silly registry.get   { date: 'Sun, 12 Apr 2015 16:35:06 GMT',
+128 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+128 silly registry.get     etag: '"COUACM3O6RPET3ADVV5KQWAXC"',
+128 silly registry.get     'content-type': 'application/json',
+128 silly registry.get     'cache-control': 'max-age=60',
+128 silly registry.get     'content-length': '2270',
+128 silly registry.get     'accept-ranges': 'bytes',
+128 silly registry.get     via: '1.1 varnish',
+128 silly registry.get     age: '0',
+128 silly registry.get     'x-served-by': 'cache-fra1235-FRA',
+128 silly registry.get     'x-cache': 'MISS',
+128 silly registry.get     'x-cache-hits': '0',
+128 silly registry.get     'x-timer': 'S1428856506.168411,VS0,VE474',
+128 silly registry.get     vary: 'Accept',
+128 silly registry.get     'keep-alive': 'timeout=10, max=50',
+128 silly registry.get     connection: 'Keep-Alive' } ]
+129 silly addNameRange number 2 { name: 'Download', range: '*', hasData: true }
+130 silly addNameRange versions [ 'download',
+130 silly addNameRange   [ '0.1.0',
+130 silly addNameRange     '0.1.1',
+130 silly addNameRange     '0.1.2',
+130 silly addNameRange     '0.1.3',
+130 silly addNameRange     '0.1.4',
+130 silly addNameRange     '0.1.5',
+130 silly addNameRange     '0.1.6',
+130 silly addNameRange     '0.1.7',
+130 silly addNameRange     '0.1.8',
+130 silly addNameRange     '0.1.9',
+130 silly addNameRange     '0.1.10',
+130 silly addNameRange     '0.1.11',
+130 silly addNameRange     '0.1.12',
+130 silly addNameRange     '0.1.13',
+130 silly addNameRange     '0.1.14',
+130 silly addNameRange     '0.1.15',
+130 silly addNameRange     '0.1.16',
+130 silly addNameRange     '0.1.17',
+130 silly addNameRange     '0.1.18',
+130 silly addNameRange     '0.2.0',
+130 silly addNameRange     '0.2.1',
+130 silly addNameRange     '0.2.2',
+130 silly addNameRange     '0.2.3',
+130 silly addNameRange     '0.2.4',
+130 silly addNameRange     '1.0.0',
+130 silly addNameRange     '1.0.1',
+130 silly addNameRange     '1.0.2',
+130 silly addNameRange     '0.1.19',
+130 silly addNameRange     '1.0.3',
+130 silly addNameRange     '1.0.4',
+130 silly addNameRange     '1.0.5',
+130 silly addNameRange     '1.0.6',
+130 silly addNameRange     '1.0.7',
+130 silly addNameRange     '2.0.0',
+130 silly addNameRange     '3.0.0',
+130 silly addNameRange     '3.0.1',
+130 silly addNameRange     '3.1.0',
+130 silly addNameRange     '3.1.1',
+130 silly addNameRange     '3.1.2',
+130 silly addNameRange     '3.2.0',
+130 silly addNameRange     '3.3.0',
+130 silly addNameRange     '4.0.1-rc.1',
+130 silly addNameRange     '4.0.0',
+130 silly addNameRange     '4.0.1',
+130 silly addNameRange     '4.1.0',
+130 silly addNameRange     '4.1.1',
+130 silly addNameRange     '4.1.2' ] ]
+131 verbose addNamed [ 'Download', '4.1.2' ]
+132 verbose addNamed [ '4.1.2', '4.1.2' ]
+133 silly lockFile 7c278c8d-Download-4-1-2 Download@4.1.2
+134 verbose lock Download@4.1.2 /Users/skolan/.npm/7c278c8d-Download-4-1-2.lock
+135 silly addNameRange number 2 { name: 'all', range: '*', hasData: true }
+136 silly addNameRange versions [ 'all', [ '0.0.0' ] ]
+137 verbose addNamed [ 'all', '0.0.0' ]
+138 verbose addNamed [ '0.0.0', '0.0.0' ]
+139 silly lockFile 14e89d4e-all-0-0-0 all@0.0.0
+140 verbose lock all@0.0.0 /Users/skolan/.npm/14e89d4e-all-0-0-0.lock
+141 silly lockFile 087da6a9-stry-npmjs-org-all-all-0-0-0-tgz https://registry.npmjs.org/all/-/all-0.0.0.tgz
+142 verbose lock https://registry.npmjs.org/all/-/all-0.0.0.tgz /Users/skolan/.npm/087da6a9-stry-npmjs-org-all-all-0-0-0-tgz.lock
+143 silly lockFile f1801e70--org-download-download-4-1-2-tgz https://registry.npmjs.org/download/-/download-4.1.2.tgz
+144 verbose lock https://registry.npmjs.org/download/-/download-4.1.2.tgz /Users/skolan/.npm/f1801e70--org-download-download-4-1-2-tgz.lock
+145 verbose addRemoteTarball [ 'https://registry.npmjs.org/all/-/all-0.0.0.tgz',
+145 verbose addRemoteTarball   'fb2aa75d4759d40e39ecbb118fabf0cc11ff554f' ]
+146 verbose addRemoteTarball [ 'https://registry.npmjs.org/download/-/download-4.1.2.tgz',
+146 verbose addRemoteTarball   '66a85e31e15c2a03aac19ad03a3d1d4a32d81f77' ]
+147 info retry fetch attempt 1 at 18:35:06
+148 verbose fetch to= /var/folders/_4/6m668g5j5_x23wv_4ljrthcc0000gp/T/npm-41973-0UFNibmd/registry.npmjs.org/all/-/all-0.0.0.tgz
+149 http GET https://registry.npmjs.org/all/-/all-0.0.0.tgz
+150 info retry fetch attempt 1 at 18:35:06
+151 verbose fetch to= /var/folders/_4/6m668g5j5_x23wv_4ljrthcc0000gp/T/npm-41973-0UFNibmd/registry.npmjs.org/download/-/download-4.1.2.tgz
+152 http GET https://registry.npmjs.org/download/-/download-4.1.2.tgz
+153 http 200 https://registry.npmjs.org/node.js/-/node.js-0.0.0.tgz
+154 silly lockFile 5feca166-js-org-node-js-node-js-0-0-0-tgz https://registry.npmjs.org/node.js/-/node.js-0.0.0.tgz
+155 silly lockFile 5feca166-js-org-node-js-node-js-0-0-0-tgz https://registry.npmjs.org/node.js/-/node.js-0.0.0.tgz
+156 silly lockFile 97ab6981-node-js-0-0-0 node.js@0.0.0
+157 silly lockFile 97ab6981-node-js-0-0-0 node.js@0.0.0
+158 silly lockFile bdfb93ff-node-js node.js@
+159 silly lockFile bdfb93ff-node-js node.js@
+160 http 200 https://registry.npmjs.org/download/-/download-4.1.2.tgz
+161 silly lockFile f1801e70--org-download-download-4-1-2-tgz https://registry.npmjs.org/download/-/download-4.1.2.tgz
+162 silly lockFile f1801e70--org-download-download-4-1-2-tgz https://registry.npmjs.org/download/-/download-4.1.2.tgz
+163 silly lockFile 7c278c8d-Download-4-1-2 Download@4.1.2
+164 silly lockFile 7c278c8d-Download-4-1-2 Download@4.1.2
+165 silly lockFile e43a4e77-Download Download@
+166 silly lockFile e43a4e77-Download Download@
+167 http 200 https://registry.npmjs.org/dependencies/-/dependencies-0.0.1.tgz
+168 http 200 https://registry.npmjs.org/all/-/all-0.0.0.tgz
+169 silly lockFile 087da6a9-stry-npmjs-org-all-all-0-0-0-tgz https://registry.npmjs.org/all/-/all-0.0.0.tgz
+170 silly lockFile 087da6a9-stry-npmjs-org-all-all-0-0-0-tgz https://registry.npmjs.org/all/-/all-0.0.0.tgz
+171 silly lockFile 14e89d4e-all-0-0-0 all@0.0.0
+172 silly lockFile 14e89d4e-all-0-0-0 all@0.0.0
+173 silly lockFile d3a3b222-all all@
+174 silly lockFile d3a3b222-all all@
+175 silly lockFile e1992e94-endencies-dependencies-0-0-1-tgz https://registry.npmjs.org/dependencies/-/dependencies-0.0.1.tgz
+176 silly lockFile e1992e94-endencies-dependencies-0-0-1-tgz https://registry.npmjs.org/dependencies/-/dependencies-0.0.1.tgz
+177 silly lockFile 58437f50-dependencies-0-0-1 dependencies@0.0.1
+178 silly lockFile 58437f50-dependencies-0-0-1 dependencies@0.0.1
+179 silly lockFile 31f3ba08-dependencies dependencies@
+180 silly lockFile 31f3ba08-dependencies dependencies@
+181 error Error: ENOENT, open '/package.json'
+182 error If you need help, you may report this *entire* log,
+182 error including the npm and node versions, at:
+182 error     <http://github.com/npm/npm/issues>
+183 error System Darwin 14.3.0
+184 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "//" "Download" "all" "node.js" "dependencies"
+185 error cwd /Users/skolan/strive
+186 error node -v v0.10.33
+187 error npm -v 1.4.28
+188 error path /package.json
+189 error code ENOENT
+190 error errno 34
+191 verbose exit [ 34, true ]
