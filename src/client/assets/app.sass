@@ -714,22 +714,21 @@ application-page.creditsView
   height: 100%
   color: #ffffff
 
-  h1
-    margin-left: 80px
-    padding-top: 50px
-
-  p
-    padding-top: 25px
-    padding-bottom: 25px
-    margin-left: 80px
-    max-width: 700px
-
-  ul
+  .container
     margin-left: 80px
 
-    li
-      a
-        color: #ffffff
+    h1
+      padding-top: 50px
+
+    p
+      padding-top: 25px
+      padding-bottom: 25px
+      max-width: 700px
+
+    ul
+      li
+        a
+          color: #ffffff
 
 application-page.notFoundView
   background: url("graphics/texture.png")
@@ -738,12 +737,11 @@ application-page.notFoundView
   height: 100%
   color: #ffffff
 
-  h1
+  .container
     margin-left: 80px
-    padding-top: 50px
 
-  p
-    margin-left: 80px
+    h1
+      padding-top: 50px
 
 @media screen and (max-width: 800px)
 
@@ -854,6 +852,54 @@ application-page.notFoundView
     float: none
     margin-right: 0
     font-size: 1.2em
+
+  section.supporter .container
+    width: 80%
+    margin: 0 auto
+
+  section.supporter h1
+    padding-top: 50px
+    max-width: 100%
+    font-size: 1.4em
+
+  section.supporter p
+    max-width: 100%
+    font-size: 0.9em
+
+  section.supporter h2
+    max-width: 100%
+    font-size: 1.2em
+
+  section.supporter h3
+    font-size: 1em
+
+  section.supporter .form
+    text-align: center
+
+  section.supporter .form input
+    display: block
+    width: 100%
+    line-height: normal !important
+    text-align: left
+
+  section.supporter .form a
+    text-align: left
+    display: inline-block
+    margin: 15px auto 0 auto
+
+  section.footer p
+    margin: 0 auto
+    width: 80%
+
+  application-page.creditsView .container
+    padding-top: 40px
+    width: 80%
+    margin: 0 auto
+
+  application-page.notFoundView .container
+    padding-top: 40px
+    width: 80%
+    margin: 0 auto
 
 @media screen and (max-width: 1300px)
 

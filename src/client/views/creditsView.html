@@ -1,12 +1,16 @@
 <application-page class="creditsView">
 
-    <h1>Credits</h1>
+    <div class="container">
 
-    <p>The images on this website was photographed by some awesome people who were not affiliated with this site,
-        below is a list of all the images being used.</p>
+        <h1>Credits</h1>
 
-    <ul>
-        <li ng-repeat="item in creditItems">{{ item.title }} (<a href="{{ item.url }}" target="_blank">{{ item.source }}</a>) ({{item.license}})</li>
-    </ul>
+        <p>The images on this website was photographed by some awesome people who were not affiliated with this site,
+            below is a list of all the images being used.</p>
+
+        <ul>
+            <li ng-repeat="item in creditItems">{{ item.title }} (<a href="{{ item.url }}" target="_blank">{{ item.source }}</a>) ({{item.license}})</li>
+        </ul>
+
+    </div>
 
 </application-page>
