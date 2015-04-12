@@ -13,7 +13,7 @@ App.controller "carouselController", ($scope, $timeout) ->
     {
       image: "/client/assets/images/harvey.milk.jpg"
       headline: "Harvey Milk"
-      caption: "The first openly gay person to be elected in california, Harvey dreamt about a better tomorrow a world filled with hope and equality where hate didn’t rule."
+      caption: "The first openly gay person to be elected in california, Harvey dreamt about a better world filled with hope and equality where hate didn't rule."
       country: "United States"
     }
     {
