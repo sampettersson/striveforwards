@@ -55,7 +55,8 @@
     "angular-scroll": "./dist/client/vendor/components/angular-scroll/angular-scroll.js",
     "ng-device-detector": "./dist/client/vendor/components/ng-device-detector/ng-device-detector.js",
     "hammerjs": "./dist/client/vendor/components/hammerjs/hammer.js",
-    "angular-hammer": "./dist/client/vendor/components/ryanmullins-angular-hammer/angular.hammer.js"
+    "angular-hammer": "./dist/client/vendor/components/ryanmullins-angular-hammer/angular.hammer.js",
+    "angular-sanitize": "./dist/client/vendor/components/angular-sanitize/angular-sanitize.js"
   },
   "browserify-shim": {
     "angular": "angular",

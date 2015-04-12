@@ -16,10 +16,11 @@ require "angular-scroll"
 require "ng-device-detector"
 require "hammerjs"
 require "angular-hammer"
+require "angular-sanitize"
 
 window.AnimationFrame = require "animation-frame"
 
-App = angular.module 'strive', ["ngRoute", "gilbox.sparkScroll", "duScroll", "ng.deviceDetector", "hmTouchEvents"]
+App = angular.module 'strive', ["ngRoute", "gilbox.sparkScroll", "duScroll", "ng.deviceDetector", "hmTouchEvents", "ngSanitize"]
 
 App.run ['$route', angular.noop]
 

@@ -9,7 +9,7 @@
             <div class="image" ng-style="{'background': 'url(' + image + ')', 'background-size': 'cover'}" ng-if="image"></div>
 
             <h1 class="heading" ng-class="{'no-image': !image}">{{ heading }}</h1>
-            <p class="body">{{ body }}</p>
+            <p class="body" ng-bind-html="body"></p>
 
         </div>
 

@@ -11,6 +11,8 @@ App.controller "eventController", ($scope) ->
       modal:
         image: "/client/assets/images/events.1972.sweden.jpg"
         heading: "1972"
-        body: "SOMETHING RANDOM"
+        body: "During the year of 1972 Sweden becomes the first country to allow transsexuals to legally change their sex, but with a forced sterilization procedure being done to do so.
+              <br/><br/>
+              In 2013 the sterilization procedure was deemed inapropriate and the law demanding the procedure was therefore revoked."
     }
   ]
