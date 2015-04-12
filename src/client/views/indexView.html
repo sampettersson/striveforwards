@@ -81,16 +81,22 @@
 
                 </div>
 
-                <div class="headline">
+                <div class="headline" ng-if="!device.mobile">
 
                     <div class="scroll-container" spark-scroll-animate="{
                                 'topTop': { top: '0%', marginTop: '0px' },
                                 'bottomCenter': { top: '100%', marginTop: primaryBodyHeadlineHeight }
                             }">
 
-                        <primary-body-headline>OUR WORLD IS A DARK PLACE LET'S TURN THE LIGHTS ON</primary-body-headline>
+                        <primary-body-headline>{{ content.primaryBodyHeadline }}</primary-body-headline>
 
                     </div>
+
+                </div>
+
+                <div class="headline-mobile" ng-if="device.mobile">
+
+                    <h1>{{ content.primaryBodyHeadline }}</h1>
 
                 </div>
 

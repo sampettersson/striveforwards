@@ -1,6 +1,6 @@
 <ul>
 
-    <li ng-repeat="item in eventItems" ng-init="hover = false" ng-click="openModal(item.modal)">
+    <li ng-repeat="item in eventItems" ng-class="{ 'hover': device.mobile }" ng-click="openModal(item.modal)">
 
         <div class="body">
 

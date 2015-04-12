@@ -2,6 +2,12 @@ App = require "../app"
 
 App.controller "carouselController", ($scope, $timeout) ->
 
+  $scope.onHammer = ($event) ->
+    if $event.direction is 4
+      $scope.navigationDot($scope.activeIndex - 1)
+    else if $event.direction is 2
+      $scope.navigationDot($scope.activeIndex + 1)
+
   # Contain all carouselItems
   $scope.carouselItems = [
     {

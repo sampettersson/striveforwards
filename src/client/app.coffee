@@ -13,10 +13,13 @@ require "shifty"
 require "rekapi"
 require "spark-scroll"
 require "angular-scroll"
+require "ng-device-detector"
+require "hammerjs"
+require "angular-hammer"
 
 window.AnimationFrame = require "animation-frame"
 
-App = angular.module 'strive', ["ngRoute", "gilbox.sparkScroll", "duScroll"]
+App = angular.module 'strive', ["ngRoute", "gilbox.sparkScroll", "duScroll", "ng.deviceDetector", "hmTouchEvents"]
 
 App.run ['$route', angular.noop]
 

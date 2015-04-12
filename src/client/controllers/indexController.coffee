@@ -1,6 +1,11 @@
 App = require "../app"
 
 App.controller 'indexController', ($scope, $document) ->
+
+  $scope.content = {
+    primaryBodyHeadline: "OUR WORLD IS A DARK PLACE LET'S TURN THE LIGHTS ON"
+  }
+
   $scope.scroll = ->
     element = angular.element document.getElementById('intro')
     $document.scrollToElementAnimated element, 0, 1500

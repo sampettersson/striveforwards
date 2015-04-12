@@ -25,4 +25,15 @@ App.directive "applicationModal", ->
 
   return directive
 
-App.controller 'applicationController', ($scope, $rootScope) ->
+App.controller 'applicationController', ($scope, $rootScope, deviceDetector, sparkSetup) ->
+
+  $rootScope.device = {}
+  $rootScope.device.mobile = deviceDetector.isMobile()
+  $rootScope.device.desktop = deviceDetector.isDesktop()
+  $rootScope.device.ios = deviceDetector.raw.os.ios
+  $rootScope.device.android = deviceDetector.raw.os.android
+
+  # Mobile specific setup
+  if $rootScope.device.mobile
+    sparkSetup.disableSparkScroll = true
+    sparkSetup.disableSparkScrollAnimate = true
