@@ -292,7 +292,7 @@ section.hero
   background-size: cover
   width: 100%
   height: 100%
-  min-height: 500px
+  min-height: 650px
   max-height: 800px
 
 
@@ -374,6 +374,9 @@ section.intro
             color: #F6014A
             font-size: 1.9em
             font-family: "asapmedium", sans-serif
+
+      .headline-mobile
+        display: none
 
 section.people
   background: url("graphics/texture.png")
@@ -766,6 +769,10 @@ application-page.notFoundView
 
   application-menu nav .menu .container ul li a
     font-size: 1.4em
+
+  application-menu nav .menu .container ul.share li
+    display: block
+    font-size: 2em
     
   section.hero
     background: url("images/hero.jpg")
@@ -773,6 +780,7 @@ application-page.notFoundView
 
   section.hero .container .logo
     text-align: center
+    width: 90%
 
   section.hero .container .logo h1
     font-size: 3em
@@ -788,7 +796,8 @@ application-page.notFoundView
     background-position: center
 
   section.hero .container p
-    margin-top: 50px
+    width: 80%
+    margin: 50px auto 0 auto
 
   section.intro
     margin-left: 20px
@@ -797,14 +806,38 @@ application-page.notFoundView
   section.intro .container .heading h2:last-child
     padding-top: 40px
 
+  section.intro .container .primary
+    flex-direction: column
+
   section.intro .container .primary .body
     flex: 1
 
   section.intro .container .primary .headline
     display: none
 
+  section.intro .container .primary .headline-mobile
+    display: block
+
+  section.intro .container .primary .headline-mobile h1
+    padding-top: 50px
+    color: #F6014A
+
   section.people .heading
     font-size: 1.1em
+
+  section.people .carousel .carousel-container .carousel-item .primary
+    flex-direction: column
+
+  section.people .carousel .carousel-container .carousel-item .primary .row-1, section.people .carousel .carousel-container .carousel-item .primary .row-2
+    flex: 1
+
+  section.people .carousel .carousel-container .carousel-item .primary .row-2
+    padding-top: 15px
+    text-align: left
+
+  section.people .carousel .carousel-container .carousel-item .primary .row-2
+    display: block
+    width: 100%
 
   section.events ul li .bar
     text-align: center

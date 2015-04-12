@@ -4,7 +4,7 @@
 
     <div class="carousel-container">
 
-        <div class="carousel-item" ng-repeat="item in carouselItems" data-index="{{ $index }}" ng-class="{'active': item.active, 'transitionOutLeft': item.transitionOutLeft, 'transitionOutRight': item.transitionOutRight, 'transitionInLeft': item.transitionInLeft, 'transitionInRight': item.transitionInRight }" ng-style="{ 'background': 'url(' + item.image + ')' }">
+        <div class="carousel-item" ng-repeat="item in carouselItems" data-index="{{ $index }}" ng-class="{'active': item.active, 'transitionOutLeft': item.transitionOutLeft, 'transitionOutRight': item.transitionOutRight, 'transitionInLeft': item.transitionInLeft, 'transitionInRight': item.transitionInRight }" ng-style="{ 'background': 'url(' + item.image + ')', 'background-position': 'center' }">
 
             <div class="primary">
 
