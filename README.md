@@ -2,7 +2,7 @@
 
 ![Strive logo](https://striveapp.herokuapp.com/client/assets/graphics/git-logo.png)
 
-Hello there! This is **Strive Forwards**, the creative task for my application to Hyper Island 15'
+Hello there! This is **Strive Forwards**, the creative task for my application to Hyper Island 2015
 
 Let me introduce **Strive Forwards**.
 
